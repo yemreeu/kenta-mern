@@ -10,7 +10,7 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const cookieParser = require("cookie-parser");
 const multer = require("multer");
-const uploadMiddleware = multer({ dest: "uploads/" });
+const uploadMiddleware = multer({ dest: "/tmp/uploads/" });
 const fs = require("fs");
 
 const salt = bcrypt.genSaltSync(10);
